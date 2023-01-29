@@ -21,7 +21,7 @@ const Navbar = () => {
             <nav
                 className={
                     scrolled
-                        ? 'bg-light fixed shadow-md top-0 w-full z-10 transition-all duration-300 ease-out'
+                        ? 'bg-dark fixed shadow-md top-0 w-full z-10 transition-all duration-300 ease-out'
                         : 'bg-transparent fixed top-0 w-full z-10 transition-all duration-300 ease-out'
                 }
             >
@@ -63,7 +63,7 @@ const Navbar = () => {
                                                 <a
                                                     key={index}
                                                     href='#'
-                                                    className='relative text-dark transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-[13px] after:bottom-1 after:w-0 after:h-[2.5px] hover:after:w-[50%] hover:after:h-[2.5px] after:bg-gradient-to-r from-red1 to-red2 hover:text-white px-3 py-2 rounded-md text-[14px] font-semibold'
+                                                    className='relative text-light transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-[13px] after:bottom-1 after:w-0 after:h-[2.5px] hover:after:w-[50%] hover:after:h-[2.5px] after:bg-gradient-to-r from-red1 to-red2 hover:text-white px-3 py-2 rounded-md text-[14px]'
                                                 >
                                                     {item}
                                                 </a>
