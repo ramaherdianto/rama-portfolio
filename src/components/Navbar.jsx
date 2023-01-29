@@ -119,19 +119,19 @@ const Navbar = () => {
                         <motion.div
                             animate={{ x: [500, 0], y: 0 }}
                             transition={{ duration: 0.45, ease: 'easeOut' }}
-                            className='inner__mobile__menu bg-light'
+                            className='inner__mobile__menu bg-dark fixed'
                         >
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 type='button'
-                                className='p-2 absolute right-5'
+                                className='p-2 absolute right-5 bg-gradient-to-br from-red1 to-red2 rounded-[50%]'
                                 aria-controls='mobile-menu'
                                 aria-expanded='false'
                             >
                                 <span className='sr-only'>Open main menu</span>
 
                                 <svg
-                                    className='block h-8 w-8 text-red2'
+                                    className='block h-6 w-6 text-light'
                                     xmlns='http://www.w3.org/2000/svg'
                                     fill='none'
                                     viewBox='0 0 24 24'
@@ -153,7 +153,7 @@ const Navbar = () => {
                                             <a
                                                 key={index}
                                                 href='#'
-                                                className='transition duration-300 ease-in-out hover:text-red1 text-dark relative px-3 py-2 rounded-md text-xl font-semibold'
+                                                className='transition duration-300 ease-in-out hover:text-red1 text-light relative px-3 py-2 rounded-md text-lg'
                                             >
                                                 {item}
                                             </a>
