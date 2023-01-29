@@ -1,44 +1,80 @@
+body {
+    background-color: #041e44;
+}
+
 nav {
     transition: all 0.3s ease;
 
     #mobile-menu {
         .inner__mobile__menu {
             display: flex;
-            position: fixed;
+            // position: fixed;
             width: 80%;
             padding: 1rem;
             top: 0;
             right: 0;
             bottom: 0;
             background-color: #fff;
-            // background: url('./assets/bgIMG.png');
-            background-repeat: repeat;
-            background-size: cover;
-
             box-shadow: -100px 0 20px rgba(168, 168, 168, 0.25);
         }
     }
 }
 
+// @media screen and (max-width: 640px) {
+//     header {
+//         margin-top: 10rem !important;
+//     }
+// }
+// @media screen and (min-width: 400px) and (max-width: 500px) {
+//     header {
+//         margin-top: 50px !important;
+//     }
+// }
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    header {
+        margin-top: 150px !important;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 600px) {
+    header {
+        margin-top: 150px !important;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 640px) {
+    header {
+        margin-top: 150px !important;
+    }
+}
+// @media screen and (min-width: 250px) and (max-width: 450px) {
+//     header {
+//         margin-top: -3rem !important;
+//     }
+// }
+
 header {
-    .hero {
-        .animation-image {
-            position: relative;
-            animation: updown 3s infinite;
+    div {
+        #job-title {
+            background: -webkit-linear-gradient(#ff7686, #ff6cd6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
+        // .animation-image {
+        //     position: relative;
+        //     animation: updown 3s infinite;
+        // }
     }
 }
 
-@keyframes updown {
-    0% {
-        top: -15px;
-    }
+// @keyframes updown {
+//     0% {
+//         top: -15px;
+//     }
 
-    50% {
-        top: 15px;
-    }
+//     50% {
+//         top: 15px;
+//     }
 
-    100% {
-        top: -15px;
-    }
-}
+//     100% {
+//         top: -15px;
+//     }
+// }
