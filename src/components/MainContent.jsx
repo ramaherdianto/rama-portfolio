@@ -6,7 +6,7 @@ const MainContent = () => {
     return (
         <>
             <Navbar />
-            <header className='bg-light relative bg-cover bg-no-repeat bg-center min-h-screen'>
+            <header className='relative max-w-7xl mt-[150px] sm:mt-[150px] md:mt-[100px] lg:mt-0 mx-auto px-4 sm:px-4 md:px-4 lg:px-4 xl:px-0 2xl:px-0 min-h-full lg:min-h-screen xl:min-h-screen flex items-center'>
                 <Jumbotron />
             </header>
         </>
