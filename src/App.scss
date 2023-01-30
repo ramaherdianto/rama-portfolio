@@ -1,5 +1,17 @@
+* {
+    box-sizing: border-box;
+    // transition: all 0.4s linear;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #041e44;
+}
+
+nav.active {
+    box-shadow: 0 0 20px 2px #1e4d85;
+    // background: linear-gradient(to bottom right, #ff7686, #d72f93);
+    // filter: blur(2.5em);
 }
 
 nav {
