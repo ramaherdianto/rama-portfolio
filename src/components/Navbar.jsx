@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { motion } from 'framer-motion';
+import { navlinks } from '../data/Navlink';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
             <nav
                 className={
                     scrolled
-                        ? 'bg-dark fixed shadow-md top-0 w-full z-10 transition-all duration-300 ease-out'
+                        ? 'bg-dark fixed active top-0 w-full z-10 transition-all duration-300 ease-out'
                         : 'bg-transparent fixed top-0 w-full z-10 transition-all duration-300 ease-out'
                 }
             >
@@ -57,19 +58,17 @@ const Navbar = () => {
                             </div>
                             <div className='hidden sm:hidden md:hidden lg:block xl:block 2xl:block ml-auto'>
                                 <div className='flex items-center justify-end md:pl-[4rem] lg:pl-[4rem] xl:pl-[4rem] 2xl:pl-[4rem] space-x-3'>
-                                    {['Home', 'About', 'Projects', 'Skills', 'Contact'].map(
-                                        (item, index) => {
-                                            return (
-                                                <a
-                                                    key={index}
-                                                    href='#'
-                                                    className='relative text-light transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-[13px] after:bottom-1 after:w-0 after:h-[2.5px] hover:after:w-[50%] hover:after:h-[2.5px] after:bg-gradient-to-r from-red1 to-red2 hover:text-white px-3 py-2 rounded-md text-[14px]'
-                                                >
-                                                    {item}
-                                                </a>
-                                            );
-                                        }
-                                    )}
+                                    {navlinks.map((item, index) => {
+                                        return (
+                                            <a
+                                                key={index}
+                                                href={item.link}
+                                                className='relative text-light transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-[13px] after:bottom-1 after:w-0 after:h-[2.5px] hover:after:w-[50%] hover:after:h-[2.5px] after:bg-gradient-to-r from-red1 to-red2 hover:text-white px-3 py-2 rounded-md text-[14px]'
+                                            >
+                                                {item.text}
+                                            </a>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </div>
@@ -147,19 +146,17 @@ const Navbar = () => {
                                 </svg>
                             </button>
                             <div className='flex flex-col mt-10 px-2 pt-2 pb-3 space-y-3 sm:px-3'>
-                                {['Home', 'About', 'Projects', 'Skill', 'Contact'].map(
-                                    (item, index) => {
-                                        return (
-                                            <a
-                                                key={index}
-                                                href='#'
-                                                className='transition duration-300 ease-in-out hover:text-red1 text-light relative px-3 py-2 rounded-md text-lg'
-                                            >
-                                                {item}
-                                            </a>
-                                        );
-                                    }
-                                )}
+                                {navlinks.map((item, index) => {
+                                    return (
+                                        <a
+                                            key={index}
+                                            href={item.link}
+                                            className='transition duration-300 ease-in-out hover:text-red1 text-light relative px-3 py-2 rounded-md text-lg'
+                                        >
+                                            {item.text}
+                                        </a>
+                                    );
+                                })}
                             </div>
                         </motion.div>
                     </div>

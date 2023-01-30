@@ -17,7 +17,7 @@ const Jumbotron = () => {
                         options={{
                             autoStart: true,
                             loop: true,
-                            delay: 30,
+                            delay: 40,
                             strings: ['Front-End Developer', 'UI Engineer'],
                         }}
                     />
@@ -29,7 +29,7 @@ const Jumbotron = () => {
                 </p>
                 <Button id='btn-primary' className='mt-4' textBtn={'Contact Me'} />
             </div>
-            <div className='w-full sm:w-full md:w-full lg:w-[80%] xl:w-[80%] 2xl:w-[80%] animation-image'>
+            <div className='w-full sm:w-[70%] md:w-[80%] lg:w-[80%] xl:w-[80%] 2xl:w-[80%] animation-image'>
                 <lottie-player
                     // src='https://assets5.lottiefiles.com/packages/lf20_ecSLfXq2zL.json'
                     src='https://assets5.lottiefiles.com/private_files/lf30_fjln45y5.json'
