@@ -1,4 +1,5 @@
 import React from 'react';
+import TypewriterClass from 'typewriter-effect';
 import Button from './Button';
 
 const Jumbotron = () => {
@@ -12,7 +13,14 @@ const Jumbotron = () => {
                     id='job-title'
                     className='text-[24px] md:text-[32px] xl:text-[42px] font-bold whitespace-pre-wrap'
                 >
-                    Front-End Developer
+                    <TypewriterClass
+                        options={{
+                            autoStart: true,
+                            loop: true,
+                            delay: 30,
+                            strings: ['Front-End Developer', 'UI Engineer'],
+                        }}
+                    />
                 </span>
                 <p className='w-[90%] sm:w-[80%] md:w-[95%] lg:w-[90%] xl:w-[80%] text-[12px] md:text-[12px] lg:text-[14px] text-light'>
                     I have a passion for developing user-friendly, accessible and responsive
