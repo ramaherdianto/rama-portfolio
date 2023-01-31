@@ -2,6 +2,7 @@ import React from 'react';
 import Experience from './Experience';
 import Jumbotron from './Jumbotron';
 import Navbar from './Navbar';
+import Skills from './Skills';
 
 const MainContent = () => {
     return (
@@ -12,6 +13,7 @@ const MainContent = () => {
             </header>
             <main className='max-w-7xl mx-auto px-4 sm:px-4 md:px-4 lg:px-4 xl:px-0 2xl:px-0'>
                 <Experience />
+                <Skills />
             </main>
         </>
     );
