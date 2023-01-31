@@ -1,6 +1,10 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import 'swiper/css/pagination';
+
+import { Pagination } from 'swiper';
+
 // Import Swiper styles
 import 'swiper/css';
 
@@ -9,7 +13,7 @@ import React from 'react';
 
 const Experience = () => {
     return (
-        <section id='experience' className='py-[100px]'>
+        <section id='experience' className='pt-[100px] pb-0 sm:pb-[50px]'>
             <div className='bg-dark2 transition-all duraiton-[0.4s] ease-in-out py-8 px-6 hidden sm:flex flex-wrap items-center justify-around rounded-[12px] gap-x-[20px] gap-y-[40px]'>
                 {Experiences.map((experience, index) => {
                     return (
@@ -31,6 +35,10 @@ const Experience = () => {
             </div>
             <Swiper
                 className='mySwiper transition-all duraiton-[0.4s] ease-in-out flex sm:hidden bg-dark2 py-8 px-6 flex-wrap items-center justify-around rounded-[12px] gap-x-[20px]'
+                pagination={{
+                    dynamicBullets: true,
+                }}
+                modules={[Pagination]}
                 breakpoints={{
                     150: {
                         spaceBetween: 180,
