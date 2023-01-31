@@ -9,7 +9,7 @@ import React from 'react';
 
 const Experience = () => {
     return (
-        <section id='experience' className='py-[100px] mb-[100rem]'>
+        <section id='experience' className='py-[100px]'>
             <div className='bg-dark2 transition-all duraiton-[0.4s] ease-in-out py-8 px-6 hidden sm:flex flex-wrap items-center justify-around rounded-[12px] gap-x-[20px] gap-y-[40px]'>
                 {Experiences.map((experience, index) => {
                     return (
