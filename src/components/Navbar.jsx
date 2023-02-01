@@ -73,12 +73,6 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className='flex items-center gap-3 lg:hidden xl:hidden 2xl:hidden'>
-                            <a
-                                href='#'
-                                className='relative text-lg after:absolute after:top-[7px] after:right-0 after:w-[6px] after:h-[6px] after:bg-primary after:rounded-[50%]'
-                            >
-                                <i className='ri-shopping-bag-line'></i>
-                            </a>
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 type='button'
