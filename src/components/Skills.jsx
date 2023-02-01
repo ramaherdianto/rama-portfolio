@@ -10,17 +10,16 @@ import 'swiper/css';
 
 import React from 'react';
 import { SkillsData } from '../data/SkillsData';
+import HeadingSection from './HeadingSection';
 
 const Skills = () => {
     return (
         <section id='skills' className='pt-[100px] pb-0 sm:pb-[50px]'>
             <div className='flex flex-col items-center justify-center gap-y-[50px] sm:gap-y-[100px]'>
-                <div className='flex flex-col md:flex-row text-center items-center justify-center gap-6'>
-                    <h2 className='text-[32px] text-light font-bold'>Skills</h2>
-                    <span className='text-light text-base'>
-                        These are the skills or tools I usually use to create a website
-                    </span>
-                </div>
+                <HeadingSection
+                    headingText='Skills'
+                    headingDesc='These are the skills or tools I usually use to create a website'
+                />
                 <div className='sm:flex hidden flex-wrap justify-center items-center gap-x-10 gap-y-10'>
                     {SkillsData.map((item, index) => {
                         return (

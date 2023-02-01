@@ -107,3 +107,18 @@ header {
 .swiper-pagination-bullet-active {
     background: #ff7686;
 }
+
+#text-project {
+    font-weight: 700;
+    background: -webkit-linear-gradient(bottom, #ff6cd6, #ff7686);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#link {
+    a {
+        .icon-tabler {
+            color: white;
+        }
+    }
+}
