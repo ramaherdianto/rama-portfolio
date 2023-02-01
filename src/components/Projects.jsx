@@ -4,21 +4,6 @@ import { ProjectData } from '../data/ProjectData';
 import HeadingSection from './HeadingSection';
 
 const Projects = () => {
-    {
-        /* {ProjectData.map((item, index) => {
-        return (
-            <div key={index} className='text-lg'>
-                <h1>{item.name}</h1>
-                <h1>{item.desc}</h1>
-                {item.tools.map((tool, index) => {
-                    return <h1 key={index}>{tool}</h1>;
-                })}
-                <h1>{item.link.github}</h1>
-                <h1>{item.link.demo}</h1>
-            </div>
-        );
-    })} */
-    }
     return (
         <section id='projects' className='pt-[100px] pb-0 sm:pb-[50px]'>
             <div className='flex flex-col items-center justify-center gap-y-[50px] sm:gap-y-[100px]'>
@@ -112,6 +97,17 @@ const Projects = () => {
                             </div>
                         );
                     })}
+                </div>
+
+                <div className='flex justify-center items-center'>
+                    <a
+                        href='https://github.com/ramaherdianto'
+                        target='_blank'
+                        rel='noreferrer'
+                        className='flex items-center justify-center py-[12px] px-[32px] text-light relative after:absolute after:left-[14.8%] after:bottom-1 after:w-[45%] after:h-[2px] hover:after:w-[70.8%] after:bg-gradient-to-r from-red1 to-red2 after:transition-all after:duration-300 after:ease-linear'
+                    >
+                        See More on Github
+                    </a>
                 </div>
             </div>
         </section>
