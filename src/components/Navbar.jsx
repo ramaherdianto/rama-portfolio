@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 
-import { motion } from 'framer-motion';
-import { navlinks } from '../data/Navlink';
+import { motion } from 'framer-motion'
+import { navlinks } from '../data/Navlink'
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false);
+    const [isOpen, setIsOpen] = useState(false)
+    const [scrolled, setScrolled] = useState(false)
 
     useEffect(() => {
         window.onscroll = function () {
             if (window.scrollY > 20) {
-                setScrolled(true);
+                setScrolled(true)
             } else {
-                setScrolled(false);
+                setScrolled(false)
             }
-        };
-    }, []);
+        }
+    }, [])
 
     return (
         <>
@@ -51,7 +51,10 @@ const Navbar = () => {
                                             gradientUnits='userSpaceOnUse'
                                         >
                                             <stop stopColor='#FF7686' />
-                                            <stop offset='1' stopColor='#D72F93' />
+                                            <stop
+                                                offset='1'
+                                                stopColor='#D72F93'
+                                            />
                                         </linearGradient>
                                     </defs>
                                 </svg>
@@ -63,11 +66,11 @@ const Navbar = () => {
                                             <a
                                                 key={index}
                                                 href={item.link}
-                                                className='relative text-light transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-[13px] after:bottom-1 after:w-0 after:h-[2.5px] hover:after:w-[50%] hover:after:h-[2.5px] after:bg-gradient-to-r from-red1 to-red2 hover:text-white px-3 py-2 rounded-md text-[14px]'
+                                                className='relative text-light transition-all duration-300 ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:left-[13px] after:bottom-1 after:w-0 after:h-[2px] hover:after:w-[50%] hover:after:h-[2px] after:bg-gradient-to-r from-red1 to-red2 hover:text-white px-3 py-2 rounded-md text-[14px]'
                                             >
                                                 {item.text}
                                             </a>
-                                        );
+                                        )
                                     })}
                                 </div>
                             </div>
@@ -149,7 +152,7 @@ const Navbar = () => {
                                         >
                                             {item.text}
                                         </a>
-                                    );
+                                    )
                                 })}
                             </div>
                         </motion.div>
@@ -157,7 +160,7 @@ const Navbar = () => {
                 )}
             </nav>
         </>
-    );
-};
+    )
+}
 
-export default Navbar;
+export default Navbar
