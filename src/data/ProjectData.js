@@ -1,6 +1,6 @@
-import Movie from '../assets/project-movie.png';
-import Cashnote from '../assets/project-cashnote.png';
-import Page from '../assets/project-landing.png';
+import Movie from '../assets/project-movie.png'
+import Cashnote from '../assets/project-cashnote.png'
+import Page from '../assets/project-landing.png'
 
 export const ProjectData = [
     {
@@ -16,7 +16,7 @@ export const ProjectData = [
     {
         img: Cashnote,
         name: 'CASHNOTE APP',
-        desc: 'Websites that can record and calculate your money income and expenses',
+        desc: 'Websites that can record and calculate your money income and expenses.',
         tools: ['React JS', 'SASS', 'Tailwind CSS'],
         link: {
             github: 'https://github.com/ramaherdianto/cashnote-app',
@@ -26,11 +26,11 @@ export const ProjectData = [
     {
         img: Page,
         name: 'LANDING PAGE',
-        desc: 'websites that contains information about the company profile and products offered.',
+        desc: 'Websites that contains information about the company profile and products offered.',
         tools: ['React JS', 'SASS', 'Bootstrap', 'Styled Components'],
         link: {
             github: 'https://github.com/ramaherdianto/web-erp',
             demo: 'https://ramaherdianto.github.io/web-erp-page/',
         },
     },
-];
+]

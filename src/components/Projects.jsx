@@ -1,4 +1,3 @@
-import { IconBrandGithub, IconEye } from '@tabler/icons'
 import React from 'react'
 import { ProjectData } from '../data/ProjectData'
 import HeadingSection from './HeadingSection'
