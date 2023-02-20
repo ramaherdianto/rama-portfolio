@@ -119,7 +119,7 @@ const Projects = () => {
                         href='https://github.com/ramaherdianto'
                         target='_blank'
                         rel='noreferrer'
-                        className='flex items-center group justify-center py-[12px] px-[12px] text-light relative after:absolute after:left-0 after:bottom-1 after:w-full after:scale-0 after:h-[2px] hover:after:scale-100 after:bg-gradient-to-r from-red1 to-red2 after:transition-all after:duration-300 after:ease-linear'
+                        className='flex items-center group justify-center py-[12px] px-[12px] text-light relative after:absolute after:left-0 after:bottom-1 after:w-full after:scale-x-0 after:h-[1.5px] hover:after:scale-x-100 after:bg-gradient-to-r from-red1 to-red2 after:transition-all after:duration-300 after:ease-linear'
                     >
                         See More on Github
                         <svg
