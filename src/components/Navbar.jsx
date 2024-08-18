@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
-import { motion } from 'framer-motion'
-import { navlinks } from '../data/Navlink'
+import { motion } from 'framer-motion';
+import { navlinks } from '../data/Navlink';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false)
-    const [scrolled, setScrolled] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
         window.onscroll = function () {
             if (window.scrollY > 20) {
-                setScrolled(true)
+                setScrolled(true);
             } else {
-                setScrolled(false)
+                setScrolled(false);
             }
-        }
-    }, [])
+        };
+    }, []);
 
     return (
         <>
@@ -27,7 +27,7 @@ const Navbar = () => {
                 }
             >
                 <div className='max-w-7xl mx-auto'>
-                    <div className='flex items-center h-16 px-4 sm:px-4 md:px-4 lg:px-4 xl:px-0 2xl:px-0'>
+                    <div className='flex items-center h-16 px-4 sm:px-4 md:px-4 lg:px-4'>
                         <div className='flex items-center w-full justify-between gap-16'>
                             <div className='flex-shrink-0'>
                                 <svg
@@ -51,10 +51,7 @@ const Navbar = () => {
                                             gradientUnits='userSpaceOnUse'
                                         >
                                             <stop stopColor='#FF7686' />
-                                            <stop
-                                                offset='1'
-                                                stopColor='#D72F93'
-                                            />
+                                            <stop offset='1' stopColor='#D72F93' />
                                         </linearGradient>
                                     </defs>
                                 </svg>
@@ -70,7 +67,7 @@ const Navbar = () => {
                                             >
                                                 {item.text}
                                             </a>
-                                        )
+                                        );
                                     })}
                                 </div>
                             </div>
@@ -152,7 +149,7 @@ const Navbar = () => {
                                         >
                                             {item.text}
                                         </a>
-                                    )
+                                    );
                                 })}
                             </div>
                         </motion.div>
@@ -160,7 +157,7 @@ const Navbar = () => {
                 )}
             </nav>
         </>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;
