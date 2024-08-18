@@ -1,6 +1,8 @@
-import Movie from '../assets/project-movie.png'
-import Cashnote from '../assets/project-cashnote.png'
-import Page from '../assets/project-landing.png'
+import Movie from '../assets/project-movie.png';
+import Cashnote from '../assets/project-cashnote.png';
+import Page from '../assets/project-landing.png';
+import TechU from '../assets/teknologiu.png';
+import Creave from '../assets/creave.png';
 
 export const ProjectData = [
     {
@@ -33,4 +35,24 @@ export const ProjectData = [
             demo: 'https://ramaherdianto.github.io/web-erp-page/',
         },
     },
-]
+    {
+        img: TechU,
+        name: 'TEKNOLOGIU',
+        desc: 'Websites that contains information about the company profile',
+        tools: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+        link: {
+            github: 'https://github.com/ramaherdianto/teknologiu',
+            demo: 'https://ramaherdianto.github.io/teknologiu/',
+        },
+    },
+    {
+        img: Creave,
+        name: 'CREAVE',
+        desc: 'Websites that contains information about the company profile',
+        tools: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+        link: {
+            github: 'https://github.com/ramaherdianto/creave-native',
+            demo: 'https://creave.netlify.app/',
+        },
+    },
+];
