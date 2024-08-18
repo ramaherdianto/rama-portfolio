@@ -37,7 +37,7 @@ const Jumbotron = () => {
             </div>
             <div className='flex justify-center items-center w-full sm:w-[70%] md:w-[80%] lg:w-full xl:w-[80%] 2xl:w-[80%] animation-image'>
                 <svg
-                    className='relative w-[300px] sm:w-[400px]'
+                    className='relative w-[300px] sm:w-[400px] drop-shadow-[0px_10px_100px_#D72F93]'
                     viewBox='0 0 479 467'
                     xmlns='http://www.w3.org/2000/svg'
                     xmlnsXlink='http://www.w3.org/1999/xlink'
