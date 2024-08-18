@@ -27,7 +27,12 @@ const Jumbotron = () => {
                     websites. I never stop learning and for me, each new project is another
                     adventure.
                 </p>
-                <Button id='btn-primary' className='mt-4' textBtn={'Contact Me'} />
+                <Button
+                    id='btn-primary'
+                    className='mt-4'
+                    textBtn={'Contact Me'}
+                    href={'#contact'}
+                />
             </div>
             <div className='w-full sm:w-[70%] md:w-[80%] lg:w-[80%] xl:w-[80%] 2xl:w-[80%] animation-image'>
                 <lottie-player

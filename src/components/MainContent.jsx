@@ -4,6 +4,7 @@ import Jumbotron from './Jumbotron';
 import Navbar from './Navbar';
 import Projects from './Projects';
 import Skills from './Skills';
+import Contact from './Contact';
 
 const MainContent = () => {
     return (
@@ -16,6 +17,7 @@ const MainContent = () => {
                 <Experience />
                 <Skills />
                 <Projects />
+                <Contact />
             </main>
         </>
     );
