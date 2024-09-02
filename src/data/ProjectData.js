@@ -1,4 +1,5 @@
 import Movie from '../assets/project-movie.png';
+import Ecommerce from '../assets/ecommerce.png';
 import Cashnote from '../assets/project-cashnote.png';
 import Page from '../assets/project-landing.png';
 import TechU from '../assets/teknologiu.png';
@@ -13,6 +14,16 @@ export const ProjectData = [
         link: {
             github: 'https://github.com/ramaherdianto/tmdb-movies',
             demo: 'https://ramaa-tmdb-movies.netlify.app/',
+        },
+    },
+    {
+        img: Ecommerce,
+        name: 'E-COMMERCE APP',
+        desc: 'Simple e-commerce platform featuring API-driven product catalog, shopping cart, and local data.',
+        tools: ['React JS', 'API', 'Axios', 'JWT-Decode', 'Tailwind CSS'],
+        link: {
+            github: 'https://github.com/ramaherdianto/fake-store',
+            demo: 'https://rams-fake-store.netlify.app/',
         },
     },
     {
