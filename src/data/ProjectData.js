@@ -21,7 +21,7 @@ export const ProjectData = [
         img: Ecommerce,
         name: 'E-COMMERCE APP',
         desc: 'Simple e-commerce platform featuring API-driven product catalog, shopping cart, and local data.',
-        tools: ['React JS', 'API', 'Axios', 'JWT-Decode', 'Tailwind CSS'],
+        tools: ['React JS', 'Redux', 'Axios', 'JWT-Decode', 'Tailwind CSS'],
         link: {
             github: 'https://github.com/ramaherdianto/fake-store',
             demo: 'https://rams-fake-store.netlify.app/',
