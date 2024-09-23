@@ -4,6 +4,7 @@ import Cashnote from '../assets/project-cashnote.png';
 import Page from '../assets/project-landing.png';
 import TechU from '../assets/teknologiu.png';
 import Creave from '../assets/creave.png';
+import LoginWeb from '../assets/loginweb.png';
 
 export const ProjectData = [
     {
@@ -24,6 +25,16 @@ export const ProjectData = [
         link: {
             github: 'https://github.com/ramaherdianto/fake-store',
             demo: 'https://rams-fake-store.netlify.app/',
+        },
+    },
+    {
+        img: LoginWeb,
+        name: 'LOGIN & REGISTER',
+        desc: 'Simple website that user can register and login.',
+        tools: ['React JS', 'Firebase', 'JWT-Decode', 'Toastify', 'Tailwind CSS'],
+        link: {
+            github: 'https://github.com/ramaherdianto/login-react',
+            demo: 'https://ram-react-login.vercel.app/',
         },
     },
     {
