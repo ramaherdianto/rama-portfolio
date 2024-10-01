@@ -19,7 +19,7 @@ const Jumbotron = () => {
                             autoStart: true,
                             loop: true,
                             delay: 40,
-                            strings: ['Front-End Developer', 'UI Engineer'],
+                            strings: ['Front-End Developer'],
                         }}
                     />
                 </span>
