@@ -5,8 +5,19 @@ import Page from '../assets/project-landing.png';
 import TechU from '../assets/teknologiu.png';
 import Creave from '../assets/creave.png';
 import LoginWeb from '../assets/loginweb.png';
+import Catemu from '../assets/Catemu-1.png';
 
 export const ProjectData = [
+    {
+        img: Catemu,
+        name: 'CATEMU APP',
+        desc: 'Catemu App is a project I worked on during my internship. This application is designed to facilitate cat adoption.',
+        tools: ['React JS', 'API', 'Axios', 'Tailwind CSS'],
+        link: {
+            github: '#',
+            demo: '#',
+        },
+    },
     {
         img: Movie,
         name: 'MOVIE APP',
