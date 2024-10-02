@@ -6,6 +6,7 @@ import TechU from '../assets/teknologiu.png';
 import Creave from '../assets/creave.png';
 import LoginWeb from '../assets/loginweb.png';
 import Catemu from '../assets/Catemu-1.png';
+import Todo from '../assets/todo.png';
 
 export const ProjectData = [
     {
@@ -56,6 +57,16 @@ export const ProjectData = [
         link: {
             github: 'https://github.com/ramaherdianto/cashnote-app',
             demo: 'https://cashnoteapps.netlify.app/',
+        },
+    },
+    {
+        img: Todo,
+        name: 'TODO APP',
+        desc: 'The main feature of this application is the ability to sort tasks based on specific criteria.',
+        tools: ['React JS', 'Tailwind CSS'],
+        link: {
+            github: 'https://github.com/ramaherdianto/todoapp.git',
+            demo: 'https://todoapp-ram.netlify.app/',
         },
     },
     {
