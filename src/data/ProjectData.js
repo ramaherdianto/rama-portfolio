@@ -63,7 +63,7 @@ export const ProjectData = [
         img: Todo,
         name: 'TODO APP',
         desc: 'The main feature of this application is the ability to sort tasks based on specific criteria.',
-        tools: ['React JS', 'Tailwind CSS'],
+        tools: ['React JS', 'Zustand', 'Toastify', 'Tailwind CSS'],
         link: {
             github: 'https://github.com/ramaherdianto/todoapp.git',
             demo: 'https://todoapp-ram.netlify.app/',

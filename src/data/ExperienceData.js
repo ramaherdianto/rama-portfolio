@@ -21,7 +21,7 @@ export const Experiences = [
     },
     {
         img: Code,
-        title: 'Freelance Web Designer',
+        title: 'Freelance Web Developer',
         company: 'Honda Kumala',
         date: 'Aug - Sept 2021',
     },
