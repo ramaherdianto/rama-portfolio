@@ -11,7 +11,7 @@ import Todo from '../assets/todo.png';
 export const ProjectData = [
     {
         img: Catemu,
-        name: 'CATEMU APP',
+        name: 'CATEMU APP (Classified Project)',
         desc: 'Catemu App is a project I worked on during my internship. This application is designed to facilitate cat adoption.',
         tools: ['React JS', 'API', 'Axios', 'Tailwind CSS'],
         link: {
